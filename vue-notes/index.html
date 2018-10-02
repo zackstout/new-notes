@@ -1,0 +1,43 @@
+<html>
+
+<head>
+	<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/lodash@4.17.11/lodash.min.js" charset="utf-8"></script>
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+	<div id="card">
+		<header>{{ title }}</header>
+
+    <form v-on:submit.prevent="addTree">
+      <input id="tree-in" v-model="input">
+      <button>{{ btn_text }}</button>
+    </form>
+
+		<!-- <div v-html="content"></div> -->
+
+    <ul>
+      <li v-for="(tree, idx) in trees">
+        <button v-on:click="increment(idx)"
+                v-show="tree.qty < 10">+</button>
+        {{ tree.qty }}
+        <button v-on:click="decrement(idx)"
+                v-show="tree.qty > 0">-</button>
+
+        {{ tree.name | speak }}
+
+        <button v-on:click="delTree(idx)">x</button>
+
+      </li>
+    </ul>
+
+    <p>
+      We have {{ totalTrees }} trees of {{ totalTypes }} different kinds! Wow!!
+    </p>
+	</div>
+
+	<script src="script.js"></script>
+</body>
+
+</html>
