@@ -1,0 +1,17 @@
+
+ul {
+  color: blue;
+  size: 30px;
+  font-family: Helvetica;
+
+  display: flex;
+  /*flex-direction: column-reverse;*/
+}
+
+/*#first {
+  order: -10;
+}*/
+
+li {
+  width: 100%;
+}

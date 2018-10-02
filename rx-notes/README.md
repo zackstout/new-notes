@@ -41,3 +41,10 @@ subscriptions() {
 
 - I confess, so far I'm not seeing the advantage: just feels like a bloated version of Vue.
 - Would be nice to have a real use case, like we ran into with the diesel-to-solar conversion.
+
+- Next up, vid 4, about Axios and `pluck` and `Observable.from()`.
+- Vid 5 on click listening for axios call and `switchMap`.
+- Vid 6 involves `bind`-ing with `:`, and the need for `map` when server has the data, reminiscent of React.
+- Vid 7 is image error handling with `Observable.merge()`, `this.imageError$.mapTo()`, and adding an error event to the dom stream (and `v-stream`-ing it into our HTML `img` tag).
+- Vid 8 is about deferring Ajax requests from page load until the user clicks -- some kung fu function abstraction stuff.
+- Vid 9 is about gracefully handling errors with `.catch()` to return a NEW request via `createLoader` (which I think was a custom function he defined).
