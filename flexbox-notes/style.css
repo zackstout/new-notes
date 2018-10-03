@@ -15,3 +15,31 @@ ul {
 li {
   width: 100%;
 }
+
+/*Why isn't this needed?*/
+/*.ctr-parent {
+  display: flex;
+}*/
+
+.ctr {
+  margin: auto;
+  background-color: tomato;
+  height: 100px;
+  width: 330px;
+}
+
+/*NOTE: Remember these need to go on the parent:*/
+.grp-six {
+  display: flex;
+  width: 100%;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.grp-six-el {
+  background-color: cornflowerblue;
+  height: 60px;
+  width: 100px;
+  /*margin: auto;*/
+  margin: 10px;
+}
