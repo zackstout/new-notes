@@ -10,6 +10,7 @@
 - `ctrl + o` and `ctrl + i` go back and forward in your cursor history.
 - Use `%` to toggle between matches brackets/parentheses.
 - `j$` moves cursor to end of next line. (oh yeah duh)
+- `10j` moves down ten lines (very useful).
 
 ## Utilities
 - `u` to undo last command. `U` to restore line. `ctrl + r` to redo command.

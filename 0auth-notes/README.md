@@ -8,3 +8,5 @@
 ## With 0Auth:
 - Uses JWT middleware, but adds `audience` and `issuer` fields to increase security.
 - We no longer need our custom `auth.js` file.
+- NOTE: we have TWO ports running: serving the static files, and our API, which serves public and priate resources.
+- We ought to look back at the JWT code and see exactly where `0Auth` replaced it.

@@ -1,0 +1,20 @@
+{
+  "name": "0auth-notes",
+  "version": "1.0.0",
+  "description": "- defined with a key (via `express-jwt`); when someone has both, can decode at [jwt.io](jwt.io). - to avoid CORS error, simploy require `cors` and `app.use(cors())`. - use JWTs to authenticate by passing our middleware as second argument to `app.get()`. Note that you must add Bearer token in Postman. With an ajax call, we specify 'Content-type' and 'accept', and/or pass a `headers` object with property 'Authorization'. - remember the `then`-chaining pattern to apply multiple transformations to returned data on the front end. - Note that this uses two URLs, one for the API calls, one for Authentication.",
+  "main": "api.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "cors": "^2.8.4",
+    "dotenv": "^6.0.0",
+    "express": "^4.16.3",
+    "express-jwt": "^5.3.1"
+  }
+}
