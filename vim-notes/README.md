@@ -19,6 +19,8 @@
 - Enter shell commands with `:!COMMAND`.
 - Save your file under a name with `:w FILENAME`.
 - use `v` to enter visual mode, selecting text that can be modified, deleted, saved, yanked, whatever.
+- use `:r FILENAME` to read, or paste, in the contents of a file.
+- We can also `:r !COMMAND` to read in the output of a command.
 
 ## Actions & Motions
 ### Deletion
@@ -31,3 +33,14 @@
 - `r` replaces one character.
 - `ce` replaces until end of word. Kinda sucks you have to `esc` out of it.
 - `c$` to change til end of line.
+- Can use `R` to replace multiple characters...but not too different from `ce`?
+
+### Yank
+- works as an operator: to yank til end of line, use `y$`.
+- Can we yank from beginning, like bash's `ctrl + u`?
+- Similarly, how do we go BACK one or more words?
+
+## Config Options
+- `:set ic` makes searches case-insensitive. `noic` takes you back.
+- `:set hls is` for highlight and incrementing -- shows partial matches.
+- `:set noic` to turn it off.
