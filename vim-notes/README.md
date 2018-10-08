@@ -11,6 +11,7 @@
 - Use `%` to toggle between matches brackets/parentheses.
 - `j$` moves cursor to end of next line. (oh yeah duh)
 - `10j` moves down ten lines (very useful).
+- `ctrl + b` for back a page, and `ctrl + f` for forward a page. At least so it works in our pager via `less`.
 
 ## Utilities
 - `u` to undo last command. `U` to restore line. `ctrl + r` to redo command.
