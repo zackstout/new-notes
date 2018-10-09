@@ -46,3 +46,22 @@
 - `:set ic` makes searches case-insensitive. `noic` takes you back.
 - `:set hls is` for highlight and incrementing -- shows partial matches.
 - `:set noic` to turn it off.
+
+- Current settings (in `~/.vimrc`):
+```bash
+set number
+set background=dark
+syntax on
+set hlsearch
+set showmatch
+set showmode
+```
+
+## From StackOverflow answers
+- Great answers [here](https://stackoverflow.com/questions/1218390/what-is-your-most-productive-shortcut-with-vim/1220118#1220118).
+- Use `{d}` to delete the whole "paragraph" chunk you're currently inside of.
+- `==` fix line indent
+- `>` indent block (in visual mode)
+- `ci(` = change text between ( .. )
+- `*` and  `#` search for the word under the cursor forward/backward.
+- VI: `vi"` for selecting all within double quotes
